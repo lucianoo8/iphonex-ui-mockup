@@ -1,0 +1,39 @@
+.editor {
+  margin: 0 20px;
+}
+.ui-btn {
+  margin: 20px 0;
+  height: 40px;
+  width: 131px;
+  left: 0px;
+  top: 0px;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 3px;
+  background: var(--blueDark);
+  color: var(--white);
+  border: none;
+}
+.ui-btn span {
+  font-size: 15px;
+}
+.title {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+}
+select.ui-dropdown {
+  padding-left: 20px;
+  padding-right: 10px;
+  margin: 30px 0 20px 0;
+  height: 47px;
+  width: 100%;
+  border-radius: 0px;
+  background: var(--gray);
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+}

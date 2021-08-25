@@ -1,8 +1,9 @@
 .iphone-x {
   position: relative;
-  margin: 40px auto;
   width: 417px;
   height: 833px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--white);
   border-radius: 40px;
   border: 6px solid var(--gray);
@@ -15,7 +16,7 @@
   left: -6px;
   width: 6px;
   height: 8px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .cutter2 {
@@ -24,7 +25,7 @@
   right: -6px;
   width: 6px;
   height: 8px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .cutter3 {
@@ -33,7 +34,7 @@
   left: -6px;
   width: 6px;
   height: 8px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 .cutter4 {
   position: absolute;
@@ -75,18 +76,18 @@
   border: 3px solid var(--gray);
   border-radius: 50%;
 }
-.viewport-wrapper {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
+
 .viewport {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  width: calc(100% - 29px);
+  height: calc(100% - 29px);
   background-color: var(--blue);
   border-radius: 40px;
 }
+
+/******************
+*  PHONE SIDE BUTTON
+******************/
 
 .rigth-btn {
   position: absolute;
@@ -126,4 +127,40 @@
   height: 80px;
   background-color: var(--gray);
   clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 56% 100%, 0 94%, 0 6%);
+}
+
+/******************
+*  SCRREEN DISPLAY
+******************/
+.content-wrapper {
+  position: absolute;
+  background-color: var(--white);
+  top: 75px;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: calc(100% - 180px);
+  width: calc(100% - 10px);
+  border-radius: 40px;
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+  overflow-x: auto;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.content-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/******************
+*  On Mobile
+******************/
+@media only screen and (max-width: 768px) {
+  .viewport {
+    border-radius: 0px;
+    width: 375px;
+    height: 812px;
+  }
 }

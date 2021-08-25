@@ -1,52 +1,19 @@
-body {
-  font-family: Poppins;
-  color: #000000;
-}
-.editor {
-  margin: 0 20px;
-}
-.ui-btn {
-  height: 40px;
-  width: 131px;
-  left: 0px;
-  top: 0px;
-  border-radius: 3px;
-  background: #418dcb;
-  color: #fff;
-  border: none;
-}
-
-.ui-btn .shape {
-  position: absolute;
-  left: 70.83%;
-  right: -4.16%;
-  top: 20.83%;
-  bottom: 20.83%;
-
-  /* White */
-
-  background: #ffffff;
-  transform: matrix(-1, 0, 0, 1, 0, 0);
-}
 .app {
   display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-.title {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 54px;
-  letter-spacing: 0px;
-  text-align: left;
-}
-.ui-dropdown {
-  height: 47.17672348022461px;
-  width: 545.3577270507812px;
-  left: 0px;
-  top: 0px;
-  border-radius: 0px;
-  background: #efefef;
-  border: 3px solid #efefef;
-  box-sizing: border-box;
+/******************
+*  On Mobile Hide Editor
+******************/
+@media only screen and (max-width: 768px) {
+  .editor-wrapper {
+    display: none;
+  }
+  .app {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

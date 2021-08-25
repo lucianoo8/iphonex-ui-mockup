@@ -1,5 +1,12 @@
 :root {
-  --blue: #a8caeb;
+  --blue: #d6ecf8;
+  --blueDark: #418dcb;
   --white: #ffffff;
-  --gray: rgb(175, 172, 172);
+  --gray: #efefef;
+  --black: #000000;
+}
+
+body {
+  font-family: Poppins;
+  color: var(--black);
 }
